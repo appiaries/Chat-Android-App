@@ -22,32 +22,32 @@ import android.net.Uri;
  */
 public class DatastoreAPI {
 	/**
-	 * Datastore API base URL DatastoreAPIのベースURL
+	 * Datastore API base URL/DatastoreAPIのベースURL
 	 */
 	private static final String dataUrlBase = "https://api-datastore.appiaries.com/dat/";
 
 	/**
-	 * Encoding(UTF-8) 文字コード(UTF-8)
+	 * Encoding(UTF-8)/文字コード(UTF-8)
 	 */
 	protected static final String defaultEncoding = "UTF-8";
 
 	/**
-	 * Token header name トークン用ヘッダ名
+	 * Token header name/トークン用ヘッダ名
 	 */
 	protected static final String tokenHeader = "X-Appiaries-Token";
 
 	/**
-	 * Profile API instance sharing credential 資格情報を共有するプロファイルAPIインスタンス
+	 * Profile API instance sharing credential/資格情報を共有するプロファイルAPIインスタンス
 	 */
 	private ProfileAPI profileAPI = null;
 
 	/**
-	 * Collection path name コレクションパス名
+	 * Collection path name/コレクションパス名
 	 */
 	private String collection = null;
 
 	/**
-	 * Constructor コンストラクタ
+	 * Constructor/コンストラクタ
 	 * 
 	 * @param profileAPI
 	 *            Profile API sharing credential/資格情報を共有するProfile API
@@ -60,16 +60,16 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Getter for profile API プロファイルAPIの取得関数
+	 * Getter for profile API/プロファイルAPIの取得関数
 	 * 
-	 * @return Profile API/プロファイルAPI
+	 * @return Profile API instance/プロファイルAPIインスタンス
 	 */
 	public ProfileAPI getProfileAPI() {
 		return profileAPI;
 	}
 
 	/**
-	 * Bulder of object URL on datastore datastore上のオブジェクトURLを構築する
+	 * Bulder of object URL on datastore/datastore上のオブジェクトURLを構築する
 	 * 
 	 * @param collection
 	 *            Collection name/コレクション名
@@ -87,7 +87,7 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Send http request and return Json HTTPリクエストの送信しJsonオブジェクトを返す
+	 * Send http request and return Json/HTTPリクエストの送信しJsonオブジェクトを返す
 	 * 
 	 * Add store token instead of access token to header
 	 * ヘッダにはアクセストークンの代わりにストアトークンを追加する
@@ -109,7 +109,7 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Look up Json object in collection Datastoreコレクション上のJsonオブジェクト1件を参照する
+	 * Look up Json object in collection/Datastoreコレクション上のJsonオブジェクト1件を参照する
 	 * 
 	 * @param objectPath
 	 *            Object path/オブジェクトパス
@@ -147,7 +147,7 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Patch Json to datastore object Datastore上のオブジェクトを部分的に変更する
+	 * Patch Json to datastore object/Datastore上のオブジェクトを部分的に変更する
 	 * 
 	 * @param objectPath
 	 *            Object path/オブジェクトパス
@@ -183,7 +183,7 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Delete Json object on datastore collection
+	 * Delete Json object on datastore collection/
 	 * Datastoreコレクション上のJsonオブジェクトを削除する
 	 * 
 	 * @param objectPath
@@ -198,7 +198,7 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Search Json objects on datastore collection
+	 * Search Json objects on datastore collection/
 	 * Datastoreコレクション上のJsonオブジェクトを検索する
 	 * 
 	 * @param objectPath
@@ -239,7 +239,7 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Search Json objects on datastore collection in short handed
+	 * Search Json objects on datastore collection in short handed/
 	 * Datastoreコレクション上のJsonオブジェクトを簡略形で検索する
 	 * 
 	 * @param objectPath

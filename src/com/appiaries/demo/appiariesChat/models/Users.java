@@ -1,7 +1,7 @@
 package com.appiaries.demo.appiariesChat.models;
 
 /**
- * User collection model ユーザコレクションモデル
+ * User collection model/ユーザコレクションモデル
  * 
  * @author PC Phase
  * 
@@ -9,7 +9,7 @@ package com.appiaries.demo.appiariesChat.models;
 
 public class Users extends JSONCollection<User> {
 	/**
-	 * Constructor コンストラクタ
+	 * Constructor/コンストラクタ
 	 */
 	public Users() {
 		super(User.class);

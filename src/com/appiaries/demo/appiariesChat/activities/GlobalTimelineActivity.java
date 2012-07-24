@@ -13,7 +13,7 @@ import com.appiaries.demo.appiariesChat.models.JSONModel;
 import com.appiaries.demo.appiariesChat.models.Timeline;
 
 /**
- * Activity displays global timeline 全体のタイムラインを表示するアクティビティ
+ * Activity displays global timeline/全体のタイムラインを表示するアクティビティ
  * 
  * @author PC Phase
  * 

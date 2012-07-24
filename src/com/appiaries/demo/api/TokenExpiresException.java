@@ -1,7 +1,7 @@
 package com.appiaries.demo.api;
 
 /**
- * Exception of expiring token トークン期限切れの例外
+ * Exception of expiring token/トークン期限切れの例外
  * 
  * @author PC Phase
  * 

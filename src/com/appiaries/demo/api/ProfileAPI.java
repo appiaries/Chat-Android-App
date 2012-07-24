@@ -25,32 +25,32 @@ import android.net.Uri;
  */
 public class ProfileAPI {
 	/**
-	 * Application Id アプリID
+	 * Application Id/アプリID
 	 */
 	public static final String appId = "appiarieschat";
 
 	/**
-	 * Client Id クライアントID
+	 * Client Id/クライアントID
 	 */
 	public static final String clientId = "94bbb47997df41c";
 
 	/**
-	 * Contact path 契約パス
+	 * Contact path/契約パス
 	 */
 	public static final String contractPath = "_sandbox";
 
 	/**
-	 * OAuth request base URL OAuthリクエストベースURL
+	 * OAuth request base URL/OAuthリクエストベースURL
 	 */
 	private static final String authRequestUrlBase = "https://api-oauth.appiaries.com/auth?display=touch&response_type=token&state=";
 
 	/**
-	 * OAuth callback URL OAuthコールバックURL
+	 * OAuth callback URL/OAuthコールバックURL
 	 */
 	private static final String authCallbackUrl = "http://callback/";
 
 	/**
-	 * Get OAuth request URL OAuthリクエストURLの取得
+	 * Get OAuth request URL/OAuthリクエストURLの取得
 	 * 
 	 * @param scopes
 	 *            Profile scope to request/リクエストするプロフィールスコープ
@@ -72,7 +72,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Handler of OAuth callback OAuthコールバックハンドラ
+	 * Handler of OAuth callback/OAuthコールバックハンドラ
 	 * 
 	 * If logged in return new API object, but if not valid URL return null
 	 * ログインに成功したら新しいAPIオブジェクトを返し、正しくないコールバックURLであればnullを返す
@@ -108,27 +108,27 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Shared preferences storage key 共有設定ストレージキー
+	 * Shared preferences storage key/共有設定ストレージキー
 	 */
 	private static final String storageKey = "com.appiaries.demo.api";
 
 	/**
-	 * Access token key name アクセストークンキー名
+	 * Access token key name/アクセストークンキー名
 	 */
 	private static final String accessTokenKey = "accessToken";
 
 	/**
-	 * Store token key name ストアトークンキー名
+	 * Store token key name/ストアトークンキー名
 	 */
 	private static final String storeTokenKey = "storeToken";
 
 	/**
-	 * Profile Json key name プロフィールJsonキー名
+	 * Profile Json key name/プロフィールJsonキー名
 	 */
 	private static final String profileJsonKey = "profileJson";
 
 	/**
-	 * profile API base URL profile APIベースURL
+	 * profile API base URL profile/APIベースURL
 	 */
 	protected static final String profileUrlBase = "https://api-profiles.appiaries.com/";
 
@@ -139,22 +139,22 @@ public class ProfileAPI {
 	private Context context = null;
 
 	/**
-	 * Current access token 現在のアクセストークン
+	 * Current access token/現在のアクセストークン
 	 */
 	private String accessToken = "";
 
 	/**
-	 * Current store token 現在のストアトークン
+	 * Current store token/現在のストアトークン
 	 */
 	private String storeToken = "";
 
 	/**
-	 * Current profile Json object 現在のプロフィールJsonオブジェクト
+	 * Current profile Json object/現在のプロフィールJsonオブジェクト
 	 */
 	private JSONObject myProfileJson = null;
 
 	/**
-	 * General constructor 通常のコンストラクタ
+	 * General constructor/通常のコンストラクタ
 	 * 
 	 * @param context
 	 *            Context object/コンテキストオブジェクト
@@ -166,7 +166,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Constructor used after authentication 認証後に使用するコンストラクタ
+	 * Constructor used after authentication/認証後に使用するコンストラクタ
 	 * 
 	 * @param context
 	 *            Context/コンテキスト
@@ -185,7 +185,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Getter for context コンテキスト取得関数
+	 * Getter for context/コンテキスト取得関数
 	 * 
 	 * @return Current context object/現在のコンテキストオブジェクト
 	 */
@@ -194,7 +194,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Getter for access token アクセストークンの取得関数
+	 * Getter for access token/アクセストークンの取得関数
 	 * 
 	 * @return Access token/アクセストークン
 	 */
@@ -203,7 +203,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Getter for store token ストアトークンの取得関数
+	 * Getter for store token/ストアトークンの取得関数
 	 * 
 	 * @return Store token/ストアトークン
 	 */
@@ -212,7 +212,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Getter for my profile json
+	 * Getter for my profile json/自分自身のプロファイルJsonの取得関数
 	 * 
 	 * @return My profile json/自分のプロファイルJson
 	 */
@@ -221,7 +221,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Get my profile json 自分のプロファイルJsonを取得
+	 * Request my profile json via API/自分のプロファイルJsonをAPIにリクエスト
 	 * 
 	 * @param force
 	 *            Force to get/強制取得
@@ -236,7 +236,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Check if logged in ログイン判定
+	 * Check if logged in/ログイン判定
 	 * 
 	 * @return True if access token and store token is not
 	 *         empty/アクセストークンとストアトークンが空でなければ真
@@ -247,7 +247,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Getter for shared preferences 共有設定ストレージの取得関数
+	 * Getter for shared preferences/共有設定ストレージの取得関数
 	 * 
 	 * @return Shared preferences object/共有設定ストレージオブジェクト
 	 */
@@ -256,7 +256,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Load credential from shared preferences 共有設定ストレージからの認証情報読み込み
+	 * Load credential from shared preferences/共有設定ストレージからの認証情報読み込み
 	 */
 	public void loadCredential() {
 		SharedPreferences pref = getPreferences();
@@ -274,7 +274,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Save credential to shared preferences 共有設定ストレージへの認証情報の保存
+	 * Save credential to shared preferences/共有設定ストレージへの認証情報の保存
 	 */
 	public void saveCredential() {
 		SharedPreferences.Editor editor = getPreferences().edit();
@@ -292,7 +292,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Logout. Clear credential ログアウト。認証情報を削除
+	 * Logout. Clear credential/ログアウト。認証情報を削除
 	 */
 	public void logout() {
 		accessToken = "";
@@ -303,7 +303,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Send http request and return Json HTTPリクエストの送信しJsonオブジェクトを返す
+	 * Send http request and return Json/HTTPリクエストの送信しJsonオブジェクトを返す
 	 * 
 	 * @param request
 	 *            Request Request object/リクエストオブジェクト
@@ -354,7 +354,7 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Get datastore access object データストアアクセスオブジェクトを取得
+	 * Get datastore access object/データストアアクセスオブジェクトを取得
 	 * 
 	 * @return Datastore access object/データストアアクセスオブジェクト
 	 */

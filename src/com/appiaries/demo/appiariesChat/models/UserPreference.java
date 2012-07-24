@@ -16,12 +16,12 @@ import com.appiaries.demo.appiariesChat.activities.BaseActivity;
  */
 public class UserPreference extends JSONModel {
 	/**
-	 * Collection name コレクション名
+	 * Collection name/コレクション名
 	 */
 	private static final String collection = "preferences";
 
 	/**
-	 * Constructor コンストラクタ
+	 * Constructor/コンストラクタ
 	 */
 	public UserPreference() throws Exception {
 		super();
@@ -30,12 +30,12 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Key name of flag to hide age 年齢を非公開フラグのキー名
+	 * Key name of flag to hide age/年齢を非公開フラグのキー名
 	 */
 	private static final String hideAgeKey = "hideAge";
 
 	/**
-	 * Getter for flag to hide age 年齢を非公開フラグの取得関数
+	 * Getter for flag to hide age/年齢を非公開フラグの取得関数
 	 * 
 	 * @return Current value of flag/現在のフラグ値
 	 */
@@ -45,7 +45,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Setter for flag to hide age 年齢非公開フラグの設定関数
+	 * Setter for flag to hide age/年齢非公開フラグの設定関数
 	 * 
 	 * @param value
 	 *            Value of flag to set/設定するフラグ値
@@ -56,12 +56,12 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Key name of favorite users お気に入りユーザのキー名
+	 * Key name of favorite users/お気に入りユーザのキー名
 	 */
 	private static final String favoriteUsersKey = "favoriteUsers";
 
 	/**
-	 * Get array of Id of favorite users お気に入りユーザのId配列を取得する
+	 * Get array of Id of favorite users/お気に入りユーザのId配列を取得する
 	 * 
 	 * @return Array of Id/Id配列
 	 * @throws Exception
@@ -85,7 +85,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Check if a user if my favorite 指定ユーザが自分のお気に入りユーザかを判定する
+	 * Check if a user if my favorite/指定ユーザが自分のお気に入りユーザかを判定する
 	 * 
 	 * @param user
 	 *            User object to check/確認するUserオブジェクト
@@ -101,7 +101,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Set user to favorite or not ユーザをお気に入りに登録/解除する
+	 * Set user to favorite or not/ユーザをお気に入りに登録/解除する
 	 * 
 	 * @param user
 	 *            Target User object/対象となるUserオブジェクト
@@ -116,7 +116,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Build my preference object path in Datastore collection
+	 * Build my preference object path in Datastore collection/
 	 * Datastoreコレクション上の自分の設定パスを構成する
 	 * 
 	 * @param activity
@@ -136,7 +136,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Load my preference from Datastore collection
+	 * Load my preference from Datastore collection/
 	 * Datastoreコレクションから自分の個別設定を取得する
 	 * 
 	 * @param activity
@@ -167,8 +167,8 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Datastoreコレクション上の自分の個別設定を部分的に書き換える Path my preference on Datastore
-	 * collection
+	 * Patch my preference on Datastore　collection/
+	 * Datastoreコレクション上の自分の個別設定を部分的に書き換える
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -189,7 +189,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Save flag to hide age on Datastore collection
+	 * Save flag to hide age on Datastore collection/
 	 * 年齢非公開フラグをDatastoreコレクション上に保存する
 	 * 
 	 * @param activity
@@ -205,7 +205,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Save state of favorite about a user to Datastore collection
+	 * Save state of favorite about a user to Datastore collection/
 	 * ユーザのお気に入り登録状況をDatastoreコレクション上に保存する
 	 * 
 	 * @param activity

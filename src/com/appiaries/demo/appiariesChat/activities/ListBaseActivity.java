@@ -26,7 +26,7 @@ import com.appiaries.demo.R;
 import com.appiaries.demo.api.TokenExpiresException;
 
 /**
- * Base class of list style activity リスト型アクティビティの基底クラス
+ * Base class of list style activity/リスト型アクティビティの基底クラス
  * 
  * @author PC Phase
  * 
@@ -35,48 +35,48 @@ import com.appiaries.demo.api.TokenExpiresException;
 public abstract class ListBaseActivity extends BaseActivity implements
 		OnClickListener, OnItemClickListener {
 	/**
-	 * Action form アクションフォーム
+	 * Action form/アクションフォーム
 	 */
 	protected LinearLayout actionForm;
 
 	/**
-	 * If display action form on header ヘッダのアクションフォームを表示するか
+	 * If display action form on header/ヘッダのアクションフォームを表示するか
 	 */
 	protected boolean showActionForm = true;
 
 	/**
-	 * Button on action form アクションフォーム上のボタン
+	 * Button on action form/アクションフォーム上のボタン
 	 */
 	protected Button actionButton;
 
 	/**
-	 * Button label on action form アクションフォーム上のボタンラベル
+	 * Button label on action form/アクションフォーム上のボタンラベル
 	 */
 	protected String actionButtonLabel = "ACTION";
 
 	/**
-	 * Button hint on action form to display at indicator
+	 * Button hint on action form to display at indicator/
 	 * 読み込み中ダイアログに表示するためのアクションフォームのボタンヒント
 	 */
 	protected String actionButtonHint = "In Action";
 
 	/**
-	 * Content of textbox after action アクション実行後のアクションフォーム上のテキスト
+	 * Content of textbox after action/アクション実行後のアクションフォーム上のテキスト
 	 */
 	protected String textAfterAction = "";
 
 	/**
-	 * Initial content of textbox アクションフォーム上のテキストボックスの初期値
+	 * Initial content of textbox/アクションフォーム上のテキストボックスの初期値
 	 */
 	protected EditText actionText;
 
 	/**
-	 * Item list アイテムリスト
+	 * Item list/アイテムリスト
 	 */
 	protected ListView itemList;
 
 	/**
-	 * List adapter リストアダプタ
+	 * List adapter/リストアダプタ
 	 */
 	protected BaseAdapter itemListAdapter;
 
@@ -126,7 +126,7 @@ public abstract class ListBaseActivity extends BaseActivity implements
 	}
 
 	/**
-	 * Reload list item with adapter アダプタでアイテムリストを再読み込み
+	 * Reload list item with adapter/アダプタでアイテムリストを再読み込み
 	 */
 	protected void applyListAdapter() {
 		if (itemListAdapter != null) {
@@ -193,7 +193,7 @@ public abstract class ListBaseActivity extends BaseActivity implements
 	}
 
 	/**
-	 * Override on each sub class to handle event action button clicked
+	 * Override on each sub class to handle event action button clicked/
 	 * アクションボタンがクリックされたイベントを処理するために各サブクラスで上書きする
 	 * 
 	 * @param text
@@ -221,7 +221,7 @@ public abstract class ListBaseActivity extends BaseActivity implements
 	}
 
 	/**
-	 * Override on each sub class to handle event item on list clicked
+	 * Override on each sub class to handle event item on list clicked/
 	 * リスト上のアイテムがクリックされたイベントを処理するために各サブクラスで上書きする
 	 * 
 	 * @param hash
@@ -231,7 +231,7 @@ public abstract class ListBaseActivity extends BaseActivity implements
 			throws Exception;
 
 	/**
-	 * Refresh item list アイテムリストの再読込
+	 * Refresh item list/アイテムリストの再読込
 	 * 
 	 * Override as onRefresh actual process 実際の処理はonRefreshメソッドで上書きする
 	 */
@@ -257,7 +257,7 @@ public abstract class ListBaseActivity extends BaseActivity implements
 	}
 
 	/**
-	 * Override on each sub class to handle event refresh item list
+	 * Override on each sub class to handle event refresh item list/
 	 * リストの再読込イベントを処理するために各サブクラスで上書きする
 	 * 
 	 * @return List adapter/リストアダプタ

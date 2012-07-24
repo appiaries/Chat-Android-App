@@ -16,6 +16,12 @@ import com.appiaries.demo.appiariesChat.models.Timeline;
 import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.UserPreference;
 
+/**
+ * Timeline activity about a user/ユーザひとりのタイムラインを表示するアクティビティ
+ * 
+ * @author PC Phase
+ *
+ */
 @SuppressLint("HandlerLeak")
 public class UserTimelineActivity extends GlobalTimelineActivity {
 	protected String ownerId;
@@ -83,7 +89,7 @@ public class UserTimelineActivity extends GlobalTimelineActivity {
 	}
 
 	/**
-	 * Change user's favorite status お気に入り登録状態を変更する
+	 * Change user's favorite status/お気に入り登録状態を変更する
 	 * 
 	 * @param addOrRemove
 	 *            True if add, false if remove/追加の場合は真、削除の場合は偽
@@ -113,7 +119,7 @@ public class UserTimelineActivity extends GlobalTimelineActivity {
 	}
 
 	/**
-	 * Check if my timeline 自分のタイムラインかを返す
+	 * Check if my timeline/自分のタイムラインかを返す
 	 * 
 	 * @return My timeline or not/自分のタイムラインかどうか
 	 */

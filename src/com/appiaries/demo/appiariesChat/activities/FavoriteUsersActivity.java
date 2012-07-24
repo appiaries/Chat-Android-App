@@ -5,7 +5,7 @@ import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.Users;
 
 /**
- * Activity displays favorite users お気に入りユーザを表示するアクティビティ
+ * Activity displays favorite users/お気に入りユーザを表示するアクティビティ
  * 
  * @author PC Phase
  * 

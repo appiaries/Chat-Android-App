@@ -15,17 +15,17 @@ import com.appiaries.demo.appiariesChat.activities.BaseActivity;
  */
 public class User extends JSONModel {
 	/**
-	 * Datastore collection name Datastoreコレクション名
+	 * Datastore collection name/Datastoreコレクション名
 	 */
 	protected static final String collection = "users";
 
 	/**
-	 * Key name for user name ユーザ名のキー名
+	 * Key name for user name/ユーザ名のキー名
 	 */
 	public static final String nameKey = "nickname";
 
 	/**
-	 * Getter for name ユーザ名の設定関数
+	 * Getter for name/ユーザ名の設定関数
 	 * 
 	 * @return User name/ユーザ名
 	 */
@@ -36,7 +36,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Setter for user name ユーザ名の設定関数
+	 * Setter for user name/ユーザ名の設定関数
 	 * 
 	 * @param name
 	 *            User name to set/設定するユーザ名
@@ -46,12 +46,12 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Key name of age 年齢のキー名
+	 * Key name of age/年齢のキー名
 	 */
 	public static final String ageKey = "age";
 
 	/**
-	 * Getter for age 年齢の取得関数
+	 * Getter for age/年齢の取得関数
 	 * 
 	 * @return Age/年齢
 	 */
@@ -68,7 +68,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Register myself to datastore collection Datastoreコレクションに自分自身を登録する
+	 * Register myself to datastore collection/Datastoreコレクションに自分自身を登録する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -88,7 +88,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Find users from Datastore collection by array of Id
+	 * Find users from Datastore collection by array of Id/
 	 * Idの配列を元にDatastoreコレクションからユーザを検索する
 	 * 
 	 * @param activity
@@ -117,7 +117,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Get a user from Datastore collection Datastoreコレクションからユーザを取得する
+	 * Get a user from Datastore collection/Datastoreコレクションからユーザを取得する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -137,7 +137,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Search users matches to condition from Datastore collection
+	 * Search users matches to condition from Datastore collection/
 	 * 条件に合致するユーザをDatastoreコレクションから検索する
 	 * 
 	 * @param activity
@@ -169,7 +169,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Search all users from Datastore collection Datastoreコレクションから全ユーザを検索する
+	 * Search all users from Datastore collection/Datastoreコレクションから全ユーザを検索する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -184,7 +184,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Search my favorite users from Datastore collection
+	 * Search my favorite users from Datastore collection/
 	 * データストアコレクションから自分のお気に入りユーザを検索する
 	 * 
 	 * @param activity

@@ -10,9 +10,15 @@ import com.appiaries.demo.R;
 import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.UserPreference;
 
+/**
+ * Activity of preference screen/設定画面アクティビティ
+ * 
+ * @author PC Phase
+ *
+ */
 public class PreferenceActivity extends BaseActivity implements OnClickListener {
 	/**
-	 * Checkbox for hide age flag 年齢非表示フラグのチェックボックス
+	 * Checkbox for hide age flag/年齢非表示フラグのチェックボックス
 	 */
 	CheckBox hideAge = null;
 

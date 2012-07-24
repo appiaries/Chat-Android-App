@@ -24,7 +24,7 @@ import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.UserPreference;
 
 /**
- * Base class for all activities require authentication
+ * Base class for all activities require authentication/
  * 認証を必要とするすべてのアクティビティの基底クラス
  * 
  * @author PC Phase
@@ -38,7 +38,7 @@ public abstract class BaseActivity extends Activity {
 	public static final int commonToastDuration = 5000;
 
 	/**
-	 * Returns menu Id to hide menu to current activity
+	 * Returns menu Id to hide menu to current activity/
 	 * 現在のアクティビティへのメニューを隠すためメニューのIDを返す
 	 * 
 	 * Override on each sub class if required 必要があれば各サブクラスで上書きする
@@ -50,12 +50,12 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Instance of profile API accessor profile APIインスタンス
+	 * Instance of profile API accessor/profile APIインスタンス
 	 */
 	private ProfileAPI profileAPI = null;
 
 	/**
-	 * Getter for profile API accessor profile APIインスタンスの取得関数
+	 * Getter for profile API accessor profile/APIインスタンスの取得関数
 	 * 
 	 * @return profile API instance/profile APIインスタンス
 	 */
@@ -68,17 +68,17 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * User object of mine 自分自身を示すユーザオブジェクト
+	 * User object of mine/自分自身を示すユーザオブジェクト
 	 */
 	protected User me = null;
 
 	/**
-	 * Preference of mine 自分自身のプレファレンス
+	 * Preference of mine/自分自身のプレファレンス
 	 */
 	protected UserPreference myPreference = null;
 
 	/**
-	 * Getter for user object of mine 自分自身を示すユーザオブジェクトの取得関数
+	 * Getter for user object of mine/自分自身を示すユーザオブジェクトの取得関数
 	 * 
 	 * @return User object/ユーザオブジェクト
 	 * @throws Exception
@@ -98,7 +98,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Getter for my preference 自分のプレファレンスの取得関数
+	 * Getter for my preference/自分のプレファレンスの取得関数
 	 * 
 	 * @return Preference/プレファレンス
 	 * @throws Exception
@@ -111,7 +111,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Threads shared dialog to indicate processing or loading
+	 * Threads shared dialog to indicate processing or loading/
 	 * 処理中・読み込み中を示すスレッド間共通ダイアログ
 	 */
 	private ProgressDialog loadingIndicator = null;
@@ -128,13 +128,13 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Handler to receive exception from another thread
+	 * Handler to receive exception from another thread/
 	 * 他スレッドからの例外をメインスレッドで受け取るためのハンドラ
 	 */
 	private Handler asyncExceptionHandler = null;
 
 	/**
-	 * Getter for inter-threads exception handler スレッド間例外ハンドラの取得関数
+	 * Getter for inter-threads exception handler/スレッド間例外ハンドラの取得関数
 	 * 
 	 * @return Handler object/ハンドラオブジェクト
 	 */
@@ -163,7 +163,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Proxy to handle exception from another thread via handler
+	 * Proxy to handle exception from another thread via handler/
 	 * ハンドラ経由で他のスレッドでの例外を処理するプロキシ
 	 * 
 	 * @param ex
@@ -176,7 +176,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Shared exception handler 共通例外処理関数
+	 * Shared exception handler/共通例外処理関数
 	 * 
 	 * @param ex
 	 *            Exception object/例外オブジェクト
@@ -198,8 +198,8 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Implement main process instead of onCreate on each sub class
-	 * 各サブクラスでonCreateに相当するメイン処理を記述する
+	 * Implement process instead of onCreate on each sub class/
+	 * 各サブクラスでonCreateに相当する処理を記述する
 	 */
 	public abstract void start();
 
@@ -257,7 +257,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Display login screen ログイン画面の表示
+	 * Display login screen/ログイン画面の表示
 	 * 
 	 * @param becouseExpired
 	 *            Reason is token expired/理由がトークン期限切れによるものか
@@ -309,7 +309,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Logout ログアウト
+	 * Logout/ログアウト
 	 * 
 	 * Remove cookies and shared preference, and display login screen
 	 * Cookieや共通設定ストレージを削除してログイン画面を再表示する
@@ -327,9 +327,9 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Async process runner 非同期処理実行関数
+	 * Async process runner/非同期処理実行関数
 	 * 
-	 * Display loading indicator and run process passed
+	 * Display loading indicator and run process passed/
 	 * 読み込み中ダイアログを表示し、指定の処理を実行する
 	 * 
 	 * @param message
@@ -371,7 +371,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Starter user timeline activity ユーザタイムラインアクティビティの開始
+	 * Starter user timeline activity/ユーザタイムラインアクティビティの開始
 	 * 
 	 * @param userId
 	 *            Target user Id/対象のユーザId

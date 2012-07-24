@@ -5,7 +5,7 @@ import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.Users;
 
 /**
- * Activity to display all users 全ユーザを表示するアクティビティ
+ * Activity to display all users/全ユーザを表示するアクティビティ
  * 
  * @author PC Phase
  * 

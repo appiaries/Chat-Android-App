@@ -9,7 +9,7 @@ import org.json.JSONObject;
 import android.util.Log;
 
 /**
- * Collection model wrapping Json Jsonをラップするコレクションモデル
+ * Collection model wrapping Json/Jsonをラップするコレクションモデル
  * 
  * @author PC Phase
  * 
@@ -25,12 +25,12 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	protected Class<T> modelClass;
 
 	/**
-	 * Key name of objects array オブジェクト配列のキー名
+	 * Key name of objects array/オブジェクト配列のキー名
 	 */
 	protected String objectsKey = "_objs";
 
 	/**
-	 * コンストラクタ Constructor
+	 * コンストラクタ/Constructor
 	 * 
 	 * @param c
 	 *            Java class of <T>/<T>に指定するJavaクラス
@@ -40,12 +40,12 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Count of all 全データ件数
+	 * Count of all/全データ件数
 	 */
 	private int count = 0;
 
 	/**
-	 * Getter for count of all 全データ件数の取得関数
+	 * Getter for count of all/全データ件数の取得関数
 	 * 
 	 * @return Count of all/全データ件数
 	 */
@@ -54,7 +54,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Setter for count of all 全データ件数の設定関数
+	 * Setter for count of all/全データ件数の設定関数
 	 * 
 	 * @param count
 	 *            Count of all/全データ件数
@@ -64,7 +64,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Array list of model Java objects cache モデルJavaオブジェクトのキャッシュ配列リスト
+	 * Array list of model Java objects cache/モデルJavaオブジェクトのキャッシュ配列リスト
 	 */
 	protected ArrayList<T> objects = null;
 
@@ -82,7 +82,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Converter to Java object's array list Javaオブジェクト配列リストへの変換関数
+	 * Converter to Java object's array list/Javaオブジェクト配列リストへの変換関数
 	 * 
 	 * @return
 	 */
@@ -115,7 +115,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Append Java object to the last of array Javaオブジェクトを配列の末尾に追加
+	 * Append Java object to the last of array/Javaオブジェクトを配列の末尾に追加
 	 * 
 	 * @param object
 	 */
@@ -127,7 +127,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Insert Java object to the head of array Javaオブジェクトを配列の末尾に挿入
+	 * Insert Java object to the head of array/Javaオブジェクトを配列の末尾に挿入
 	 * 
 	 * @param object
 	 */
@@ -139,7 +139,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Converter to array of string hash map for listing
+	 * Converter to array of string hash map for listing/
 	 * 一覧表示に利用する文字列ハッシュマップ配列への変換関数
 	 * 
 	 * @return Array of string hash map/文字列ハッシュマップ配列
@@ -153,7 +153,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Convert to hash map dictionary keyed by Id Idをキーとしたハッシュマップ辞書への変換
+	 * Convert to hash map dictionary keyed by Id/Idをキーとしたハッシュマップ辞書への変換
 	 * 
 	 * @return　Hash map dictionary/ハッシュマップ辞書
 	 * @throws Exception
@@ -167,7 +167,7 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Get unique owner Id array オーナーIDのユニーク配列を取得
+	 * Get unique owner Id array/オーナーIDのユニーク配列を取得
 	 * 
 	 * @return Unique owner id array/ユニークなオーナーIDの配列
 	 */

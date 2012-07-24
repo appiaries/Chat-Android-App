@@ -9,40 +9,40 @@ import org.json.JSONObject;
 import android.util.Log;
 
 /**
- * Base model class wrapping Json Jsonデータをラッピングする規定モデルクラス
+ * Base model class wrapping Json/Jsonデータをラッピングする規定モデルクラス
  * 
  * @author PC Phase
  * 
  */
 public class JSONModel {
 	/**
-	 * Json key for id idを示すJsonキー
+	 * Json key for id/Idを示すJsonキー
 	 */
 	public static final String idKey = "_id";
 
 	/**
-	 * Json key for owner id オーナーIDを示すJsonキー
+	 * Json key for owner id/オーナーIDを示すJsonキー
 	 */
 	public static final String ownerIdKey = "_owner";
 
 	/**
-	 * Json key for created time stamp data 作成日タイムスタンプを示すJsonキー
+	 * Json key for created time stamp data/作成日タイムスタンプを示すJsonキー
 	 */
 	public static final String createdAtKey = "_cts";
 
 	/**
-	 * Date time format to display 表示用の時間フォーマット
+	 * Date time format to display/表示用の時間フォーマット
 	 */
 	protected static SimpleDateFormat displayDateFormat = new SimpleDateFormat(
 			"yyyy/MM/dd HH:mm:ss");
 
 	/**
-	 * Raw json to wrap with this object オブジェクトでラッピングする生Jsonデータ
+	 * Raw json to wrap with this object/オブジェクトでラッピングする生Jsonデータ
 	 */
 	protected JSONObject json = new JSONObject();
 
 	/**
-	 * Getter for raw Json 生Jsonデータの取得関数
+	 * Getter for raw Json/生Jsonデータの取得関数
 	 * 
 	 * @return The raw Json of this object/オブジェクトの生Json
 	 */
@@ -51,7 +51,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Setter for raw Json 生Jsonデータの設定関数
+	 * Setter for raw Json/生Jsonデータの設定関数
 	 * 
 	 * @param json
 	 *            A New raw Json of this object/このオブジェクトの新しい生Json
@@ -61,7 +61,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Getter for string value in json Jsonデータの文字列値の取得関数
+	 * Getter for string value in json/Jsonデータの文字列値の取得関数
 	 * 
 	 * @param name
 	 *            Key name of data/データのキー名
@@ -73,7 +73,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Getter for string value in Json Jsonデータの文字列値の取得関数
+	 * Getter for string value in Json/Jsonデータの文字列値の取得関数
 	 * 
 	 * @param name
 	 *            Key name of data/データのキー名
@@ -95,7 +95,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Setter for string value in Json Jsonデータの文字列値の設定関数
+	 * Setter for string value in Json/Jsonデータの文字列値の設定関数
 	 * 
 	 * @param name
 	 *            Key name of data/データのキー名
@@ -116,7 +116,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Getter for Id Idの取得関数
+	 * Getter for Id/Idの取得関数
 	 * 
 	 * @return Id of this object/このオブジェクトのId
 	 */
@@ -125,7 +125,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Setter for Id Idの設定関数
+	 * Setter for Id/Idの設定関数
 	 * 
 	 * @return Id of this object/このオブジェクトのId
 	 */
@@ -134,7 +134,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Getter for owner Id オーナーIdの取得関数
+	 * Getter for owner/Id オーナーIdの取得関数
 	 * 
 	 * @return Id of this object/このオブジェクトのId
 	 */
@@ -143,7 +143,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Getter for time stamp that this object created on server サーバー上での作成日時の取得関数
+	 * Getter for time stamp that this object created on server/サーバー上での作成日時の取得関数
 	 * 
 	 * @return Formatted date time/フォーマットされた日時
 	 */
@@ -155,7 +155,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Converter to string hash map to use listing 一覧表示で利用する文字列ハッシュマップへの変換関数
+	 * Converter to string hash map to use listing/一覧表示で利用する文字列ハッシュマップへの変換関数
 	 * 
 	 * Override buildHashmap method in each class to customize mapping
 	 * クラスごとにマッピングをカスタマイズするためにはbuildHashMapメソッドをオーバーライドする
@@ -169,7 +169,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Hash map builder must be overridden in each model class
+	 * Hash map builder must be overridden in each model class/
 	 * モデルクラスごとにオーバーライドするハッシュマップ構築関数
 	 * 
 	 * @param hashMap
@@ -184,7 +184,7 @@ public class JSONModel {
 	}
 
 	/**
-	 * Utility method to catenate two keys 2つのキーを連結するユーティリティ関数
+	 * Utility method to catenate two keys/2つのキーを連結するユーティリティ関数
 	 * 
 	 * @param key1
 	 *            Key1/キー1

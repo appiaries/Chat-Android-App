@@ -6,19 +6,25 @@ import org.json.JSONObject;
 
 import com.appiaries.demo.appiariesChat.activities.BaseActivity;
 
+/**
+ * Chat message on timeline/タイムライン上のメッセージ
+ * 
+ * @author PC Phase
+ *
+ */
 public class ChatMessage extends JSONModel {
 	/**
-	 * Datastore collection name Datastoreコレクション名
+	 * Datastore collection name/Datastoreコレクション名
 	 */
 	protected static final String collection = "timeline";
 
 	/**
-	 * Poster 投稿ユーザ
+	 * Poster/投稿ユーザ
 	 */
 	private User user = null;
 
 	/**
-	 * Getter for poster 投稿ユーザの取得関数
+	 * Getter for poster/投稿ユーザの取得関数
 	 * 
 	 * @return User object/ユーザオブジェクト
 	 */
@@ -27,7 +33,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Setter for poster 投稿ユーザの設定関数
+	 * Setter for poster/投稿ユーザの設定関数
 	 * 
 	 * @param user
 	 *            User object/ユーザオブジェクト
@@ -37,12 +43,12 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Key name for message text メッセージテキストのキー名
+	 * Key name for message text/メッセージテキストのキー名
 	 */
 	public static final String textKey = "text";
 
 	/**
-	 * Getter for message text メッセージテキストの取得関数
+	 * Getter for message text/メッセージテキストの取得関数
 	 * 
 	 * @return Message text/メッセージテキスト
 	 */
@@ -51,7 +57,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Setter for message text メッセージテキストの設定関数
+	 * Setter for message text/メッセージテキストの設定関数
 	 * 
 	 * @param text
 	 *            Message text to set/設定するメッセージテキスト
@@ -73,7 +79,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Load and set users to messages on timeline ユーザを取得しタイムラインの各メッセージに設定する
+	 * Load and set users to messages on timeline/ユーザを取得しタイムラインの各メッセージに設定する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -100,7 +106,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Load recent timeline from datastore collection
+	 * Load recent timeline from datastore collection/
 	 * 最新のタイムラインをDatastoreコレクションから読み込む
 	 * 
 	 * @param activity
@@ -119,7 +125,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Load user timeline from datastore collection
+	 * Load user timeline from datastore collection/
 	 * Datastoreコレクションからユーザタイムラインを読み込む
 	 * 
 	 * @param activity
@@ -144,7 +150,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Post new message to Datastore collection Datastoreコレクションにメッセージを投稿する
+	 * Post new message to Datastore collection/Datastoreコレクションにメッセージを投稿する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -159,7 +165,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Delete message from Datastore collection Datastoreコレクションからメッセージを削除する
+	 * Delete message from Datastore collection/Datastoreコレクションからメッセージを削除する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス

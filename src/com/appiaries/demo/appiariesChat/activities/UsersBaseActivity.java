@@ -11,14 +11,20 @@ import com.appiaries.demo.appiariesChat.models.JSONModel;
 import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.Users;
 
+/**
+ * Activity base class to list users/ユーザ一覧を表示するための基底アクティビティクラス
+ * 
+ * @author PC Phase
+ *
+ */
 public abstract class UsersBaseActivity extends ListBaseActivity {
 	/**
-	 * Current users object to display item list アイテムリスト上に表示する現在のUsersオブジェクト
+	 * Current users object to display item list/アイテムリスト上に表示する現在のUsersオブジェクト
 	 */
 	protected Users users = null;
 
 	/**
-	 * Search query keyword 検索キーワード
+	 * Search query keyword/検索キーワード
 	 */
 	protected String query = "";
 
@@ -41,7 +47,7 @@ public abstract class UsersBaseActivity extends ListBaseActivity {
 	}
 
 	/**
-	 * Override on each sub class to handle event query users
+	 * Override on each sub class to handle event query users/
 	 * ユーザー検索イベントを処理するため各サブクラスで上書きする
 	 * 
 	 * @param q

@@ -12,9 +12,15 @@ import com.appiaries.demo.appiariesChat.models.JSONModel;
 import com.appiaries.demo.appiariesChat.models.Timeline;
 import com.appiaries.demo.appiariesChat.models.User;
 
+/**
+ * Activity base class to display timeline/メッセージタイムラインを表示するアクティビティ基底クラス
+ * 
+ * @author PC Phase
+ *
+ */
 public abstract class TimelineBaseActivity extends ListBaseActivity {
 	/**
-	 * Timeline object to display on item list アイテムリスト上で表示を行うTimelineオブジェクト
+	 * Timeline object to display on item list/アイテムリスト上で表示を行うTimelineオブジェクト
 	 */
 	protected Timeline timeline = null;
 
@@ -38,7 +44,7 @@ public abstract class TimelineBaseActivity extends ListBaseActivity {
 	}
 
 	/**
-	 * Override on each sub class to handle event refresh timeline
+	 * Override on each sub class to handle event refresh timeline/
 	 * タイムラインの再読込イベントを処理するために各サブクラスで上書きする
 	 * 
 	 * @return Timeline object/Timelineオブジェクト
@@ -54,7 +60,7 @@ public abstract class TimelineBaseActivity extends ListBaseActivity {
 	}
 
 	/**
-	 * Override on each sub class to handle event of new message
+	 * Override on each sub class to handle event of new message/
 	 * 新しいメッセージの投稿イベントを処理するために各サブクラスで上書きする
 	 * 
 	 * @param text
