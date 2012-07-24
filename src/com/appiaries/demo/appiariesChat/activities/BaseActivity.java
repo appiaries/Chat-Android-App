@@ -68,7 +68,7 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * User object of mine/自分自身を示すユーザオブジェクト
+	 * User object of mine/自分自身を示すユーザーオブジェクト
 	 */
 	protected User me = null;
 
@@ -78,9 +78,9 @@ public abstract class BaseActivity extends Activity {
 	protected UserPreference myPreference = null;
 
 	/**
-	 * Getter for user object of mine/自分自身を示すユーザオブジェクトの取得関数
+	 * Getter for user object of mine/自分自身を示すユーザーオブジェクトの取得関数
 	 * 
-	 * @return User object/ユーザオブジェクト
+	 * @return User object/ユーザーオブジェクト
 	 * @throws Exception
 	 */
 	public User getMe() {
@@ -371,10 +371,10 @@ public abstract class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Starter user timeline activity/ユーザタイムラインアクティビティの開始
+	 * Starter user timeline activity/ユーザータイムラインアクティビティの開始
 	 * 
 	 * @param userId
-	 *            Target user Id/対象のユーザId
+	 *            Target user Id/対象のユーザーId
 	 */
 	public void startUserTimeline(String userId) {
 		Intent intent = new Intent(this, UserTimelineActivity.class);

@@ -17,7 +17,7 @@ import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.UserPreference;
 
 /**
- * Timeline activity about a user/ユーザひとりのタイムラインを表示するアクティビティ
+ * Timeline activity about a user/ユーザーひとりのタイムラインを表示するアクティビティ
  * 
  * @author PC Phase
  *
@@ -136,13 +136,13 @@ public class UserTimelineActivity extends GlobalTimelineActivity {
 	@Override
 	public void refresh() {
 		// Get user of this timeline bofore refresh
-		// 再読込の前にこのタイムラインのユーザを取得
+		// 再読込の前にこのタイムラインのユーザーを取得
 		if (isMyTimeline()) {
 			user = getMe();
 			super.refresh();
 		} else {
 			// Get the user asynchronously
-			// 非同期でユーザを取得
+			// 非同期でユーザーを取得
 
 			final Handler finishHandler = new Handler() {
 				@Override

@@ -12,7 +12,7 @@ import com.appiaries.demo.appiariesChat.models.User;
 import com.appiaries.demo.appiariesChat.models.Users;
 
 /**
- * Activity base class to list users/ユーザ一覧を表示するための基底アクティビティクラス
+ * Activity base class to list users/ユーザー一覧を表示するための基底アクティビティクラス
  * 
  * @author PC Phase
  *
@@ -74,7 +74,7 @@ public abstract class UsersBaseActivity extends ListBaseActivity {
 		}
 
 		// Start the user's timeline activity
-		// そのユーザのタイムラインアクティビティを開始
+		// そのユーザーのタイムラインアクティビティを開始
 		startUserTimeline(userId);
 	}
 

@@ -19,24 +19,24 @@ public class ChatMessage extends JSONModel {
 	protected static final String collection = "timeline";
 
 	/**
-	 * Poster/投稿ユーザ
+	 * Poster/投稿ユーザー
 	 */
 	private User user = null;
 
 	/**
-	 * Getter for poster/投稿ユーザの取得関数
+	 * Getter for poster/投稿ユーザーの取得関数
 	 * 
-	 * @return User object/ユーザオブジェクト
+	 * @return User object/ユーザーオブジェクト
 	 */
 	public User getUser() {
 		return user;
 	}
 
 	/**
-	 * Setter for poster/投稿ユーザの設定関数
+	 * Setter for poster/投稿ユーザーの設定関数
 	 * 
 	 * @param user
-	 *            User object/ユーザオブジェクト
+	 *            User object/ユーザーオブジェクト
 	 */
 	public void setUser(User user) {
 		this.user = user;
@@ -79,7 +79,7 @@ public class ChatMessage extends JSONModel {
 	}
 
 	/**
-	 * Load and set users to messages on timeline/ユーザを取得しタイムラインの各メッセージに設定する
+	 * Load and set users to messages on timeline/ユーザーを取得しタイムラインの各メッセージに設定する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -126,12 +126,12 @@ public class ChatMessage extends JSONModel {
 
 	/**
 	 * Load user timeline from datastore collection/
-	 * Datastoreコレクションからユーザタイムラインを読み込む
+	 * Datastoreコレクションからユーザータイムラインを読み込む
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
 	 * @param userId
-	 *            User Id/ユーザId
+	 *            User Id/ユーザーId
 	 * @return Timeline object/Timelineオブジェクト
 	 * @throws Exception
 	 */

@@ -74,7 +74,7 @@ public class GlobalTimelineActivity extends TimelineBaseActivity implements
 
 		} else {
 			// If message selected is not mine, move to the user timeline
-			// もし選択したメッセージが自分のメッセージでなければユーザタイムラインに遷移する
+			// もし選択したメッセージが自分のメッセージでなければユーザータイムラインに遷移する
 			startUserTimeline(ownerId);
 		}
 	}

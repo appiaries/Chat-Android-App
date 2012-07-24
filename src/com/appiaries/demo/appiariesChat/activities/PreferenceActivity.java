@@ -27,7 +27,7 @@ public class PreferenceActivity extends BaseActivity implements OnClickListener 
 		setContentView(R.layout.preference);
 
 		// User name and age
-		// ユーザ名と年齢
+		// ユーザー名と年齢
 		TextView userName = (TextView) findViewById(R.id.user_name);
 		TextView age = (TextView) findViewById(R.id.age);
 		

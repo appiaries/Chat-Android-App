@@ -9,7 +9,7 @@ import com.appiaries.demo.api.TokenExpiresException;
 import com.appiaries.demo.appiariesChat.activities.BaseActivity;
 
 /**
- * Preference of user ユーザの個別設定
+ * Preference of user ユーザーの個別設定
  * 
  * @author PC Phase
  * 
@@ -56,12 +56,12 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Key name of favorite users/お気に入りユーザのキー名
+	 * Key name of favorite users/お気に入りユーザーのキー名
 	 */
 	private static final String favoriteUsersKey = "favoriteUsers";
 
 	/**
-	 * Get array of Id of favorite users/お気に入りユーザのId配列を取得する
+	 * Get array of Id of favorite users/お気に入りユーザーのId配列を取得する
 	 * 
 	 * @return Array of Id/Id配列
 	 * @throws Exception
@@ -85,7 +85,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Check if a user if my favorite/指定ユーザが自分のお気に入りユーザかを判定する
+	 * Check if a user if my favorite/指定ユーザーが自分のお気に入りユーザーかを判定する
 	 * 
 	 * @param user
 	 *            User object to check/確認するUserオブジェクト
@@ -101,7 +101,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Set user to favorite or not/ユーザをお気に入りに登録/解除する
+	 * Set user to favorite or not/ユーザーをお気に入りに登録/解除する
 	 * 
 	 * @param user
 	 *            Target User object/対象となるUserオブジェクト
@@ -206,7 +206,7 @@ public class UserPreference extends JSONModel {
 
 	/**
 	 * Save state of favorite about a user to Datastore collection/
-	 * ユーザのお気に入り登録状況をDatastoreコレクション上に保存する
+	 * ユーザーのお気に入り登録状況をDatastoreコレクション上に保存する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス

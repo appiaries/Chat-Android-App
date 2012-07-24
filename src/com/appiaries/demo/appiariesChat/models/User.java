@@ -8,7 +8,7 @@ import com.appiaries.demo.api.DatastoreAPI;
 import com.appiaries.demo.appiariesChat.activities.BaseActivity;
 
 /**
- * User model ユーザモデル
+ * User model ユーザーモデル
  * 
  * @author PC Phase
  * 
@@ -20,14 +20,14 @@ public class User extends JSONModel {
 	protected static final String collection = "users";
 
 	/**
-	 * Key name for user name/ユーザ名のキー名
+	 * Key name for user name/ユーザー名のキー名
 	 */
 	public static final String nameKey = "nickname";
 
 	/**
-	 * Getter for name/ユーザ名の設定関数
+	 * Getter for name/ユーザー名の設定関数
 	 * 
-	 * @return User name/ユーザ名
+	 * @return User name/ユーザー名
 	 */
 	public String getName() {
 		String nick = getStringProperty(nameKey);
@@ -36,10 +36,10 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Setter for user name/ユーザ名の設定関数
+	 * Setter for user name/ユーザー名の設定関数
 	 * 
 	 * @param name
-	 *            User name to set/設定するユーザ名
+	 *            User name to set/設定するユーザー名
 	 */
 	public void setName(String name) {
 		setStringProperty(nameKey, name);
@@ -89,7 +89,7 @@ public class User extends JSONModel {
 
 	/**
 	 * Find users from Datastore collection by array of Id/
-	 * Idの配列を元にDatastoreコレクションからユーザを検索する
+	 * Idの配列を元にDatastoreコレクションからユーザーを検索する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -117,12 +117,12 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Get a user from Datastore collection/Datastoreコレクションからユーザを取得する
+	 * Get a user from Datastore collection/Datastoreコレクションからユーザーを取得する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
 	 * @param userId
-	 *            User Id/ユーザId
+	 *            User Id/ユーザーId
 	 * @return User object/Userオブジェクト
 	 * @throws Exception
 	 */
@@ -138,7 +138,7 @@ public class User extends JSONModel {
 
 	/**
 	 * Search users matches to condition from Datastore collection/
-	 * 条件に合致するユーザをDatastoreコレクションから検索する
+	 * 条件に合致するユーザーをDatastoreコレクションから検索する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -169,7 +169,7 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Search all users from Datastore collection/Datastoreコレクションから全ユーザを検索する
+	 * Search all users from Datastore collection/Datastoreコレクションから全ユーザーを検索する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -185,7 +185,7 @@ public class User extends JSONModel {
 
 	/**
 	 * Search my favorite users from Datastore collection/
-	 * データストアコレクションから自分のお気に入りユーザを検索する
+	 * データストアコレクションから自分のお気に入りユーザーを検索する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス

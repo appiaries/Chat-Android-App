@@ -1,7 +1,7 @@
 package com.appiaries.demo.appiariesChat.models;
 
 /**
- * User collection model/ユーザコレクションモデル
+ * User collection model/ユーザーコレクションモデル
  * 
  * @author PC Phase
  * 
