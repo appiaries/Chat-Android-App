@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/GlobalTimeline" android:title="@string/menu_timeline" android:icon="@android:drawable/ic_menu_mapmode"></item>
+    <item android:id="@+id/MyTimeline" android:title="@string/menu_my_timeline" android:icon="@android:drawable/ic_menu_myplaces"></item><item android:id="@+id/AllUsers" android:title="@string/menu_all_users" android:icon="@android:drawable/ic_menu_search"></item>
+    <item android:id="@+id/FavoriteUsers" android:title="@string/menu_my_favorites" android:icon="@android:drawable/ic_menu_share"></item>
+    <item android:id="@+id/Preference" android:title="@string/menu_preference" android:icon="@android:drawable/ic_menu_preferences"></item><item android:id="@+id/Logout" android:title="@string/menu_logout" android:icon="@android:drawable/ic_menu_revert"></item>
+    
+    
+    
+
+</menu>
