@@ -183,16 +183,4 @@ public class JSONModel {
 		hashMap.put(ownerIdKey, getOwnerId());
 	}
 
-	/**
-	 * Utility method to catenate two keys/2つのキーを連結するユーティリティ関数
-	 * 
-	 * @param key1
-	 *            Key1/キー1
-	 * @param key2
-	 *            Key2/キー2
-	 * @return Catenated key/連結されたキー
-	 */
-	public static String catKeys(String key1, String key2) {
-		return key1 + "_" + key2;
-	}
 }

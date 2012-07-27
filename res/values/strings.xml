@@ -2,7 +2,7 @@
 <resources>
 
     <string name="msg_token_expired">Token expired</string>
-    <string name="app_name">appiariesChat</string>
+    <string name="app_name">appiaries Group Chat</string>
     <string name="msg_logged_in">Logged in!</string>
     <string name="msg_logged_out">Logged out</string>
     <string name="indicator_deleting">Deleting</string>

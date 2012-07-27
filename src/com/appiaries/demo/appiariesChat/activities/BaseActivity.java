@@ -11,8 +11,6 @@ import android.os.Message;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.webkit.CookieManager;
-import android.webkit.CookieSyncManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
@@ -276,7 +274,7 @@ public abstract class BaseActivity extends Activity {
 		// Get OAuth URL from Profile API class
 		// Profile APIクラスからOAuth認証URLを取得
 		String authUrl = ProfileAPI
-				.getAuthUrl(new String[] { "nickname", "age" });
+				.getAuthUrl(new String[] { "nickname", "age_group" });
 
 		wv.loadUrl(authUrl);
 		wv.setWebViewClient(new WebViewClient() {
@@ -286,7 +284,7 @@ public abstract class BaseActivity extends Activity {
 				try {
 					// Check for each URL to display if a correct callback URL
 					// 表示されようとするURLが正しいコールバックURLかを確認
-					ProfileAPI auth = ProfileAPI.authCallback(activity, url);
+					ProfileAPI auth = ProfileAPI.handleAuthCallback(activity, url);
 					if (auth != null) {
 						Toast.makeText(activity,
 								getString(R.string.msg_logged_in),
@@ -315,11 +313,6 @@ public abstract class BaseActivity extends Activity {
 	 * Cookieや共通設定ストレージを削除してログイン画面を再表示する
 	 */
 	public void logout() {
-		CookieSyncManager.createInstance(this);
-		CookieManager manager = CookieManager.getInstance();
-		manager.removeAllCookie();
-		CookieSyncManager.getInstance().sync();
-
 		getAPI().logout();
 		Toast.makeText(this, getString(R.string.msg_logged_out),
 				commonToastDuration).show();

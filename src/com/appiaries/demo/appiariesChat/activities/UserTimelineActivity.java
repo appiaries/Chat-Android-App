@@ -107,7 +107,7 @@ public class UserTimelineActivity extends GlobalTimelineActivity {
 			public void run() {
 				try {
 					getMyPreference().setFavoriteUser(user, addOrRemove);
-					UserPreference.saveFavoriteUserState(
+					UserPreference.patchFavoriteUserState(
 							UserTimelineActivity.this, user, addOrRemove);
 
 					finishHandler.sendEmptyMessage(0);

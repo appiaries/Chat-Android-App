@@ -18,7 +18,7 @@ import com.appiaries.demo.appiariesChat.models.UserPreference;
  */
 public class PreferenceActivity extends BaseActivity implements OnClickListener {
 	/**
-	 * Checkbox for hide age flag/年齢非表示フラグのチェックボックス
+	 * Checkbox for hide age flag/年齢層非表示フラグのチェックボックス
 	 */
 	CheckBox hideAge = null;
 
@@ -27,7 +27,7 @@ public class PreferenceActivity extends BaseActivity implements OnClickListener 
 		setContentView(R.layout.preference);
 
 		// User name and age
-		// ユーザー名と年齢
+		// ユーザー名と年齢層
 		TextView userName = (TextView) findViewById(R.id.user_name);
 		TextView age = (TextView) findViewById(R.id.age);
 		
@@ -35,7 +35,7 @@ public class PreferenceActivity extends BaseActivity implements OnClickListener 
 		age.setText(getMe().getAge());
 
 		// Flag to hide age
-		// 年齢非表示フラグ
+		// 年齢層非表示フラグ
 		hideAge = (CheckBox) findViewById(R.id.hide_age);
 		try {
 			hideAge.setChecked(getMyPreference().getHideAge());
@@ -61,7 +61,7 @@ public class PreferenceActivity extends BaseActivity implements OnClickListener 
 						public void run() {
 							try {
 								// Save flag to hide age immediately
-								// 年齢非表示フラグを即座に保存
+								// 年齢層非表示フラグを即座に保存
 								UserPreference pref = getMyPreference();
 								pref.setHideAge(hideAge.isChecked());
 								UserPreference.saveHideAge(

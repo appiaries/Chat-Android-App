@@ -46,14 +46,14 @@ public class User extends JSONModel {
 	}
 
 	/**
-	 * Key name of age/年齢のキー名
+	 * Key name of age/年齢層のキー名
 	 */
-	public static final String ageKey = "age";
+	public static final String ageKey = "age_group";
 
 	/**
-	 * Getter for age/年齢の取得関数
+	 * Getter for age/年齢層の取得関数
 	 * 
-	 * @return Age/年齢
+	 * @return Age/年齢層
 	 */
 	public String getAge() {
 		return getStringProperty(ageKey);

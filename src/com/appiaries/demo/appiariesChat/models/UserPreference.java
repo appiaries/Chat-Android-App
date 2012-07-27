@@ -25,17 +25,18 @@ public class UserPreference extends JSONModel {
 	 */
 	public UserPreference() throws Exception {
 		super();
+		json.put(hideAgeKey, true);
 		JSONObject favoriteUsers = new JSONObject();
 		json.put(favoriteUsersKey, favoriteUsers);
 	}
 
 	/**
-	 * Key name of flag to hide age/年齢を非公開フラグのキー名
+	 * Key name of flag to hide age/年齢層非公開フラグのキー名
 	 */
 	private static final String hideAgeKey = "hideAge";
 
 	/**
-	 * Getter for flag to hide age/年齢を非公開フラグの取得関数
+	 * Getter for flag to hide age/年齢層非公開フラグの取得関数
 	 * 
 	 * @return Current value of flag/現在のフラグ値
 	 */
@@ -45,7 +46,7 @@ public class UserPreference extends JSONModel {
 	}
 
 	/**
-	 * Setter for flag to hide age/年齢非公開フラグの設定関数
+	 * Setter for flag to hide age/年齢層非公開フラグの設定関数
 	 * 
 	 * @param value
 	 *            Value of flag to set/設定するフラグ値
@@ -190,7 +191,7 @@ public class UserPreference extends JSONModel {
 
 	/**
 	 * Save flag to hide age on Datastore collection/
-	 * 年齢非公開フラグをDatastoreコレクション上に保存する
+	 * 年齢層非公開フラグをDatastoreコレクション上に保存する
 	 * 
 	 * @param activity
 	 *            BaseActivity instance/BaseActivityインスタンス
@@ -216,7 +217,7 @@ public class UserPreference extends JSONModel {
 	 *            Add or remove/登録か削除か
 	 * @throws Exception
 	 */
-	public static void saveFavoriteUserState(BaseActivity activity, User user,
+	public static void patchFavoriteUserState(BaseActivity activity, User user,
 			boolean addOrRemove) throws Exception {
 		patchMyPreference(activity, favoriteUsersKey, user.getId(),
 				String.valueOf(addOrRemove));

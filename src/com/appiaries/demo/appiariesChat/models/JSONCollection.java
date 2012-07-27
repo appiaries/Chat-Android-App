@@ -115,30 +115,6 @@ public class JSONCollection<T extends JSONModel> extends JSONModel {
 	}
 
 	/**
-	 * Append Java object to the last of array/Javaオブジェクトを配列の末尾に追加
-	 * 
-	 * @param object
-	 */
-	public void append(T object) {
-		if (objects == null)
-			getObjects();
-		if (objects != null)
-			objects.add(object);
-	}
-
-	/**
-	 * Insert Java object to the head of array/Javaオブジェクトを配列の末尾に挿入
-	 * 
-	 * @param object
-	 */
-	public void prepend(T object) {
-		if (objects == null)
-			getObjects();
-		if (objects != null)
-			objects.add(0, object);
-	}
-
-	/**
 	 * Converter to array of string hash map for listing/
 	 * 一覧表示に利用する文字列ハッシュマップ配列への変換関数
 	 * 

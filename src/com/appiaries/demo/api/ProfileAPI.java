@@ -16,6 +16,8 @@ import org.json.JSONObject;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 
 /**
  * appiaries profile API accessor appiaries APIアクセスクラス
@@ -84,7 +86,7 @@ public class ProfileAPI {
 	 * @return A new API object or null/新しいAPIオブジェクトかnull
 	 * @throws Exception
 	 */
-	public static ProfileAPI authCallback(Context context, String callbackUrl)
+	public static ProfileAPI handleAuthCallback(Context context, String callbackUrl)
 			throws Exception {
 		String prefix = authCallbackUrl + "#";
 		if (callbackUrl.length() < prefix.length()
@@ -292,13 +294,20 @@ public class ProfileAPI {
 	}
 
 	/**
-	 * Logout. Clear credential/ログアウト。認証情報を削除
+	 * Logout/ログアウト
 	 */
 	public void logout() {
+		// Remove all cookies assigned to this application/
+		// このアプリのCookieをすべて削除
+		CookieSyncManager.createInstance(getContext());
+		CookieManager manager = CookieManager.getInstance();
+		manager.removeAllCookie();
+		CookieSyncManager.getInstance().sync();
+
+		// Save empty tokens/トークンを空にして保存
 		accessToken = "";
 		storeToken = "";
 		myProfileJson = null;
-
 		saveCredential();
 	}
 
@@ -341,7 +350,7 @@ public class ProfileAPI {
 
 			JSONObject json = new JSONObject(builder.toString());
 			return json;
-		} else if (403 == code) {
+		} else if (401 == code || 403 == code) {
 			// Logout if token expired, and fires TokenExpiresException
 			// トークンの期限切れなら強制ログアウト、TokenExpiresExceptionを発火
 			logout();

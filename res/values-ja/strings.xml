@@ -2,7 +2,7 @@
 <resources>
 
     <string name="msg_token_expired">トークン期限切れ</string>
-    <string name="app_name">appiariesチャット</string>
+    <string name="app_name">appiariesグループチャット</string>
     <string name="msg_logged_in">ログインしました!</string>
     <string name="msg_logged_out">ログアウトしました</string>
     <string name="indicator_deleting">削除しています</string>
@@ -22,8 +22,8 @@
     <string name="menu_add_to_favorites">お気に入りに追加</string>
     <string name="menu_remove_from_favorites">お気に入りから削除</string>
     <string name="label_user_name">ユーザ名</string>
-    <string name="label_age">年齢</string>
-    <string name="label_hide_age">年齢を非表示にする</string>
+    <string name="label_age">年齢層</string>
+    <string name="label_hide_age">年齢層を非表示にする</string>
     <string name="menu_user_timeline">ユーザのタイムライン</string>
     <string name="label_is_in_favorite">お気に入りに登録中</string>
     <string name="btn_search">検索</string>
