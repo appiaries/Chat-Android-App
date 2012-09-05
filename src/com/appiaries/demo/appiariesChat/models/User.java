@@ -84,7 +84,13 @@ public class User extends JSONModel {
 			json.remove(User.ageKey);
 		}
 
-		activity.getAPI().getDatastore(collection).putObject("/_new", json);
+		if (json.has("_id")) {
+			activity.getAPI().getDatastore(collection)
+				.putObject("/" + json.getString("_id"), json);
+		} else {
+			activity.getAPI().getDatastore(collection)
+				.postObject("/_new", json);
+		}
 	}
 
 	/**
