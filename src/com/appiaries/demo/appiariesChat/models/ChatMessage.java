@@ -160,8 +160,14 @@ public class ChatMessage extends JSONModel {
 	 */
 	public static void postNewMessage(BaseActivity activity,
 			ChatMessage chatMessage) throws Exception {
-		activity.getAPI().getDatastore(collection)
-				.putObject("/_new", chatMessage.getJson());
+		JSONObject json = chatMessage.getJson();
+		if (json.has("_id")) {
+			activity.getAPI().getDatastore(collection)
+				.putObject("/" + json.getString("_id"), json);
+		} else {
+			activity.getAPI().getDatastore(collection)
+				.postObject("/_new", json);
+		}
 	}
 
 	/**
