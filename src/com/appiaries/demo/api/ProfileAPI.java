@@ -44,7 +44,7 @@ public class ProfileAPI {
 	/**
 	 * OAuth request base URL/OAuthリクエストベースURL
 	 */
-	private static final String authRequestUrlBase = "https://api-oauth.appiaries.com/auth?display=touch&response_type=token&state=";
+	private static final String authRequestUrlBase = "https://api-oauth.appiaries.com/v1/auth?display=touch&response_type=token&state=";
 
 	/**
 	 * OAuth callback URL/OAuthコールバックURL
@@ -132,7 +132,7 @@ public class ProfileAPI {
 	/**
 	 * profile API base URL profile/APIベースURL
 	 */
-	protected static final String profileUrlBase = "https://api-profiles.appiaries.com/";
+	protected static final String profileUrlBase = "https://api-profiles.appiaries.com/v1/";
 
 	/**
 	 * Current context object used to get shared preferences
