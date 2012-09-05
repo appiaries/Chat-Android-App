@@ -122,12 +122,12 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Post Json object to datastore collection/DatastoreコレクションにJsonオブジェクトをPUTする
+	 * Post Json object to datastore collection/DatastoreコレクションにJsonオブジェクトをPOSTする
 	 *
 	 * @param objectPath
 	 *            Object path/オブジェクトパス
 	 * @param json
-	 *            Json object to put/PUTするJsonオブジェクト
+	 *            Json object to post/POSTするJsonオブジェクト
 	 * @return Json object echoed back/エコーバックされたJsonオブジェクト
 	 * @throws Exception
 	 */
