@@ -24,7 +24,7 @@ public class DatastoreAPI {
 	/**
 	 * Datastore API base URL/DatastoreAPIのベースURL
 	 */
-	private static final String dataUrlBase = "https://api-datastore.appiaries.com/dat/";
+	private static final String dataUrlBase = "https://api-datastore.appiaries.com/v1/dat/";
 
 	/**
 	 * Encoding(UTF-8)/文字コード(UTF-8)
@@ -122,10 +122,30 @@ public class DatastoreAPI {
 	}
 
 	/**
-	 * Put Json object to datastore collection DatastoreコレクションにJsonオブジェクトをPUTする
+	 * Post Json object to datastore collection/DatastoreコレクションにJsonオブジェクトをPUTする
+	 *
+	 * @param objectPath
+	 *            Object path/オブジェクトパス
+	 * @param json
+	 *            Json object to put/PUTするJsonオブジェクト
+	 * @return Json object echoed back/エコーバックされたJsonオブジェクト
+	 * @throws Exception
+	 */
+	public JSONObject postObject(String objectPath, JSONObject json)
+			throws Exception {
+		// Append get=true to echo json
+		// エコーバックを受けるためget=trueパラメータを追加
+		String url = buildObjectUrl(objectPath).buildUpon()
+				.appendQueryParameter("get", "true").toString();
+		HttpPost request = new HttpPost(url);
+		request.setEntity(new StringEntity(json.toString(), defaultEncoding));
+
+		return requestJson(request);
+	}
+
+	/**
+	 * Put Json object to datastore collection/DatastoreコレクションにJsonオブジェクトをPUTする
 	 * 
-	 * @param collection
-	 *            Collection name/コレクション名
 	 * @param objectPath
 	 *            Object path/オブジェクトパス
 	 * @param json
